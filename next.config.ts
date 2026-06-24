@@ -8,6 +8,7 @@ const basePath = isProd ? "/aspire-health" : "";
 
 const nextConfig: NextConfig = {
   output: "export", // genereert statische bestanden in /out
+  trailingSlash: true, // robuuster op GitHub Pages: /pad/ werkt i.p.v. 404
   basePath,
   images: {
     unoptimized: true, // nodig bij static export
