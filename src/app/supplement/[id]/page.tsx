@@ -2,8 +2,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { supplements, getSupplement } from "@/lib/data/supplements";
 import { MOMENT_LABELS } from "@/lib/overlap";
-import { suppliers, amazonEsUrl } from "@/lib/suppliers";
+import { suppliers } from "@/lib/suppliers";
 import { interactionsFor, interactionLabel } from "@/lib/data/interactions";
+import { getFotos, amazonLink } from "@/lib/data/fotos";
 import AddToSchema from "@/components/AddToSchema";
 
 // Genereer een statische pagina voor elk supplement (nodig voor GitHub Pages).
@@ -35,6 +36,39 @@ export default async function SupplementPage({
       </div>
 
       <p className="mb-5 text-foreground">{s.beschrijving}</p>
+
+      {(() => {
+        const f = getFotos(s.id);
+        if (!f || f.images.length === 0) return null;
+        return (
+          <div className="mb-6">
+            <div className="grid grid-cols-3 gap-2">
+              {f.images.slice(0, 3).map((src, i) => (
+                <a
+                  key={i}
+                  href={amazonLink(s)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block overflow-hidden rounded-xl border border-border bg-white"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={src}
+                    alt={`${s.naam} foto ${i + 1}`}
+                    loading="lazy"
+                    className="aspect-square w-full object-contain p-2"
+                  />
+                </a>
+              ))}
+            </div>
+            {f.brand && (
+              <p className="mt-1 text-[11px] text-muted">
+                Voorbeeldproduct: {f.brand} · foto&apos;s via Amazon.es
+              </p>
+            )}
+          </div>
+        );
+      })()}
 
       <div className="grid gap-4 sm:grid-cols-2">
         <Card titel="Dosering">
@@ -136,7 +170,7 @@ export default async function SupplementPage({
           ))}
         </div>
         <a
-          href={amazonEsUrl(s)}
+          href={amazonLink(s)}
           target="_blank"
           rel="noopener noreferrer"
           className="mt-3 inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary-hover"

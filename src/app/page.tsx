@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { supplements } from "@/lib/data/supplements";
+import { getFotos } from "@/lib/data/fotos";
 import type { SupplementCategory } from "@/lib/types";
 
 const CATEGORIES: { value: SupplementCategory | "alle"; label: string }[] = [
@@ -76,11 +77,22 @@ export default function Home() {
             href={`/supplement/${s.id}`}
             className="block rounded-xl border border-border bg-card p-4 transition hover:border-primary hover:shadow-sm"
           >
-            <div className="mb-1 flex items-baseline justify-between gap-2">
-              <h2 className="font-semibold">{s.naam}</h2>
-              <span className="shrink-0 rounded-full bg-sand px-2 py-0.5 text-[11px] uppercase tracking-wide text-muted">
-                {s.categorie}
-              </span>
+            <div className="mb-2 flex items-start gap-3">
+              {getFotos(s.id)?.images[0] && (
+                /* eslint-disable-next-line @next/next/no-img-element */
+                <img
+                  src={getFotos(s.id)!.images[0]}
+                  alt={s.naam}
+                  loading="lazy"
+                  className="h-14 w-14 shrink-0 rounded-lg border border-border bg-white object-contain p-1"
+                />
+              )}
+              <div className="flex flex-1 items-baseline justify-between gap-2">
+                <h2 className="font-semibold">{s.naam}</h2>
+                <span className="shrink-0 rounded-full bg-sand px-2 py-0.5 text-[11px] uppercase tracking-wide text-muted">
+                  {s.categorie}
+                </span>
+              </div>
             </div>
             <p className="mb-2 line-clamp-2 text-sm text-muted">{s.beschrijving}</p>
             <div className="flex flex-wrap gap-1">
