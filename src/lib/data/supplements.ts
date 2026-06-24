@@ -1,0 +1,238 @@
+import type { Supplement } from "@/lib/types";
+
+// Startdataset Fase 1 — samengesteld uit Mark's input. Door Mark te controleren
+// en aan te vullen. Prijzen zijn voorbeelden (handmatig) en moeten geverifieerd worden.
+// LET OP: dit is informatie, geen medisch advies (zie disclaimer in de app).
+
+export const supplements: Supplement[] = [
+  {
+    id: "vitamine-d3",
+    naam: "Vitamine D3",
+    naamEn: "Vitamin D3 (cholecalciferol)",
+    categorie: "vitamine",
+    werkzameStoffen: ["vitamine d3"],
+    doseringStandaard: "1000–2000 IE",
+    bovengrens: "4000 IE per dag (volwassenen)",
+    innameMomenten: ["bij-maaltijd"],
+    innameTips: "Met een vetrijke maaltijd voor betere opname. Combineer met K2.",
+    geschiktVoor: ["botten", "immuunsysteem", "spierfunctie"],
+    doelgroepen: ["algemeen", "ouderen"],
+    interacties: ["vitamine-k2"],
+    beschrijving:
+      "Essentieel voor sterke botten en een goed werkend immuunsysteem. In Nederland het meest verkochte supplement, vooral relevant in de winter.",
+    bronnen: [],
+    prijzen: [
+      { leverancier: "Vitakruid", prijs: 9.95, inhoud: "100 capsules", eenheidsprijs: "€0,10/cap", datum: "2026-06-19" },
+      { leverancier: "iHerb", prijs: 7.5, inhoud: "120 softgels", eenheidsprijs: "€0,06/cap", datum: "2026-06-19" },
+    ],
+  },
+  {
+    id: "vitamine-k2",
+    naam: "Vitamine K2 (MK-7)",
+    naamEn: "Vitamin K2 (menaquinone)",
+    categorie: "vitamine",
+    werkzameStoffen: ["vitamine k2"],
+    doseringStandaard: "90–200 mcg",
+    innameMomenten: ["bij-maaltijd"],
+    innameTips: "Samen met D3 innemen. Stuurt calcium naar de botten in plaats van de aderen.",
+    geschiktVoor: ["botten", "hart en vaten"],
+    doelgroepen: ["algemeen", "ouderen"],
+    interacties: ["vitamine-d3"],
+    waarschuwingen: ["Overleg met je arts bij gebruik van bloedverdunners (vitamine K-antagonisten)."],
+    beschrijving:
+      "Werkt samen met vitamine D3 en helpt calcium op de juiste plek te krijgen (botten, niet de slagaders).",
+    prijzen: [
+      { leverancier: "Vitakruid", prijs: 14.95, inhoud: "60 capsules", eenheidsprijs: "€0,25/cap", datum: "2026-06-19" },
+    ],
+  },
+  {
+    id: "omega-3",
+    naam: "Omega 3 (visolie)",
+    naamEn: "Omega-3 (EPA/DHA)",
+    categorie: "vetzuur",
+    werkzameStoffen: ["epa", "dha", "omega 3"],
+    doseringStandaard: "1000–2000 mg (EPA+DHA)",
+    innameMomenten: ["bij-maaltijd"],
+    innameTips: "Bij de maaltijd tegen opboeren. Let op een hoog EPA/DHA-gehalte.",
+    geschiktVoor: ["hart en vaten", "hersenen", "ogen (droge ogen)", "ontstekingsremmend"],
+    doelgroepen: ["algemeen", "sporters", "ouderen"],
+    waarschuwingen: ["Voorzichtig bij bloedverdunners — overleg met je arts."],
+    beschrijving:
+      "Vetzuren EPA en DHA ondersteunen hart, hersenen en ogen en werken ontstekingsremmend. Ook genoemd tegen droge ogen.",
+    prijzen: [
+      { leverancier: "Bol", prijs: 19.99, inhoud: "120 capsules", eenheidsprijs: "€0,17/cap", datum: "2026-06-19" },
+    ],
+  },
+  {
+    id: "magnesium",
+    naam: "Magnesium",
+    naamEn: "Magnesium",
+    categorie: "mineraal",
+    werkzameStoffen: ["magnesium"],
+    doseringStandaard: "300–400 mg",
+    bovengrens: "250 mg uit supplementen (aanvullend op voeding, richtlijn EU)",
+    innameMomenten: ["avond", "voor-slapen"],
+    innameTips: "'s Avonds voor ontspanning en slaap. Vorm magnesiumcitraat/-bisglycinaat is goed opneembaar.",
+    geschiktVoor: ["energie", "slaap", "spieren (kramp)", "botten"],
+    doelgroepen: ["algemeen", "sporters", "ouderen"],
+    beschrijving:
+      "Betrokken bij honderden processen: energie, spier- en zenuwfunctie, slaap en botten.",
+    prijzen: [
+      { leverancier: "Vitakruid", prijs: 12.5, inhoud: "100 tabletten", eenheidsprijs: "€0,13/tab", datum: "2026-06-19" },
+    ],
+  },
+  {
+    id: "knoflook",
+    naam: "Knoflook",
+    naamEn: "Garlic (Allium sativum)",
+    categorie: "kruid",
+    werkzameStoffen: ["allicine", "knoflook"],
+    doseringStandaard: "600–1200 mg extract",
+    innameMomenten: ["bij-maaltijd"],
+    innameTips: "Gestandaardiseerd op allicine. Reukloze (kyolic) varianten bestaan.",
+    geschiktVoor: ["bloeddruk", "hart en vaten", "immuunsysteem"],
+    doelgroepen: ["algemeen", "ouderen"],
+    waarschuwingen: ["Kan bloedverdunnend werken — voorzichtig rond operaties / met bloedverdunners."],
+    beschrijving:
+      "Traditioneel ingezet voor schone aderen en een stabiele bloeddruk. Door Mark genoemd in combinatie met citroen en appelazijn.",
+    prijzen: [
+      { leverancier: "Holland & Barrett", prijs: 8.99, inhoud: "90 capsules", eenheidsprijs: "€0,10/cap", datum: "2026-06-19" },
+    ],
+  },
+  {
+    id: "meidoorn",
+    naam: "Meidoorn (Hawthorn)",
+    naamEn: "Hawthorn (Crataegus)",
+    categorie: "kruid",
+    werkzameStoffen: ["crataegus", "meidoorn"],
+    doseringStandaard: "300–900 mg extract",
+    innameMomenten: ["ochtend", "avond"],
+    innameTips: "Vaak als thee of extract. Mark noemt mix met maretak + heermoes.",
+    geschiktVoor: ["bloeddruk", "hart en vaten"],
+    doelgroepen: ["algemeen", "ouderen"],
+    waarschuwingen: ["Overleg met je arts bij hartmedicatie."],
+    beschrijving:
+      "Traditioneel kruid voor hart en bloeddruk; ondersteunt een soepel werkend hart.",
+  },
+  {
+    id: "nattokinase",
+    naam: "Nattokinase",
+    naamEn: "Nattokinase",
+    categorie: "enzym",
+    werkzameStoffen: ["nattokinase"],
+    doseringStandaard: "2000–8000 FU",
+    innameMomenten: ["nuchter", "voor-slapen"],
+    innameTips: "Op een lege maag. Mark noemt 8000 eenheden.",
+    geschiktVoor: ["hart en vaten", "bloeddoorstroming"],
+    doelgroepen: ["algemeen", "ouderen"],
+    waarschuwingen: [
+      "NIET combineren met bloedverdunners zonder arts. Stop voor operaties.",
+    ],
+    beschrijving:
+      "Enzym uit natto (gefermenteerde soja) dat fibrine kan afbreken; genoemd in verband met bloedstolsels.",
+  },
+  {
+    id: "curcumine",
+    naam: "Curcumine (kurkuma)",
+    naamEn: "Curcumin (turmeric)",
+    categorie: "kruid",
+    werkzameStoffen: ["curcumine", "kurkuma"],
+    doseringStandaard: "500–1000 mg",
+    innameMomenten: ["bij-maaltijd"],
+    innameTips: "Met zwarte peper (piperine) of vetrijk voor opname.",
+    geschiktVoor: ["ontstekingsremmend", "gewrichten", "hersenen"],
+    doelgroepen: ["algemeen", "sporters", "ouderen"],
+    beschrijving:
+      "Krachtige ontstekingsremmer uit kurkuma; populair voor gewrichten en algehele gezondheid.",
+  },
+  {
+    id: "ginkgo-biloba",
+    naam: "Ginkgo biloba",
+    naamEn: "Ginkgo biloba",
+    categorie: "kruid",
+    werkzameStoffen: ["ginkgo", "flavonglycosiden", "terpeenlactonen"],
+    doseringStandaard: "120–240 mg extract",
+    innameMomenten: ["ochtend"],
+    innameTips: "Gestandaardiseerd extract (24% flavonglycosiden).",
+    geschiktVoor: ["geheugen", "concentratie", "bloedcirculatie"],
+    doelgroepen: ["algemeen", "ouderen"],
+    waarschuwingen: ["Kan bloedverdunnend werken — voorzichtig met bloedverdunners."],
+    beschrijving:
+      "Blad van de oudste boomsoort op aarde; ondersteunt bloedcirculatie en cognitieve functies zoals geheugen en concentratie.",
+  },
+  {
+    id: "ashwagandha",
+    naam: "Ashwagandha (KSM-66)",
+    naamEn: "Ashwagandha (Withania somnifera)",
+    categorie: "kruid",
+    werkzameStoffen: ["ashwagandha", "withanoliden"],
+    doseringStandaard: "300–600 mg",
+    innameMomenten: ["avond"],
+    innameTips: "'s Avonds bij stress/slaap; ook overdag mogelijk.",
+    geschiktVoor: ["stress", "slaap", "energie"],
+    doelgroepen: ["algemeen", "sporters"],
+    beschrijving:
+      "Adaptogeen kruid uit de ayurveda dat helpt bij stress en herstel.",
+  },
+  {
+    id: "q10",
+    naam: "Co-enzym Q10",
+    naamEn: "Coenzyme Q10 (ubiquinol)",
+    categorie: "overig",
+    werkzameStoffen: ["q10", "ubiquinol"],
+    doseringStandaard: "100–200 mg",
+    innameMomenten: ["bij-maaltijd"],
+    innameTips: "Bij een vetrijke maaltijd. Ubiquinol is beter opneembaar.",
+    geschiktVoor: ["hart en vaten", "energie"],
+    doelgroepen: ["algemeen", "ouderen"],
+    beschrijving:
+      "Lichaamseigen stof voor energieproductie in de cellen; genoemd bij hart- en vaatziekten.",
+  },
+  {
+    id: "mariadistel",
+    naam: "Mariadistel",
+    naamEn: "Milk thistle (Silybum marianum)",
+    categorie: "kruid",
+    werkzameStoffen: ["silymarine", "mariadistel"],
+    doseringStandaard: "200–400 mg (silymarine)",
+    innameMomenten: ["bij-maaltijd"],
+    innameTips: "Gestandaardiseerd op silymarine.",
+    geschiktVoor: ["lever", "ontgiften"],
+    doelgroepen: ["algemeen"],
+    beschrijving:
+      "Traditioneel kruid ter ondersteuning van de lever.",
+  },
+  {
+    id: "zink",
+    naam: "Zink",
+    naamEn: "Zinc",
+    categorie: "mineraal",
+    werkzameStoffen: ["zink"],
+    doseringStandaard: "10–15 mg",
+    bovengrens: "25 mg per dag (aanvullend, EU-richtlijn)",
+    innameMomenten: ["bij-maaltijd"],
+    innameTips: "Niet samen met veel calcium/ijzer (concurreren om opname).",
+    geschiktVoor: ["immuunsysteem", "huid"],
+    doelgroepen: ["algemeen", "sporters"],
+    beschrijving:
+      "Mineraal voor immuunsysteem, huid en herstel. Populair als 'Quercetine & Zink'.",
+  },
+  {
+    id: "shilajit",
+    naam: "Shilajit (mumijo)",
+    naamEn: "Shilajit",
+    categorie: "overig",
+    werkzameStoffen: ["fulvinezuur", "shilajit"],
+    doseringStandaard: "300–500 mg",
+    innameMomenten: ["ochtend"],
+    innameTips: "Mark: te bestellen bij RealRoots met code WIJSDOM15.",
+    geschiktVoor: ["energie", "mineralen"],
+    doelgroepen: ["algemeen", "sporters"],
+    beschrijving:
+      "Harsachtig mineralencomplex rijk aan fulvinezuur en aminozuren; genoemd voor energie.",
+  },
+];
+
+export function getSupplement(id: string): Supplement | undefined {
+  return supplements.find((s) => s.id === id);
+}

@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* Aspire — Pyramide huisstijl (placeholder-palet: goud / zand / nachtblauw).
+   Vervang de kleuren zodra de officiële Pyramide-assets binnen zijn. */
+@theme inline {
+  --color-primary: #C9952A; /* piramide-goud */
+  --color-primary-hover: #A87A1E;
+  --color-primary-light: #F0D89B;
+  --color-night: #1B2A4A; /* nachtblauw */
+  --color-night-soft: #2C3E63;
+  --color-sand: #F6EEDD;
+  --color-sand-dark: #E8DAB8;
+  --color-background: #FBF7EF;
+  --color-foreground: #20242C;
+  --color-card: #FFFFFF;
+  --color-border: #E6DCC6;
+  --color-muted: #6B7280;
+  --color-success: #2F855A;
+  --color-danger: #C53030;
+  --color-warning: #B7791F;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+:root {
+  --bg: #FBF7EF;
+  --fg: #20242C;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
