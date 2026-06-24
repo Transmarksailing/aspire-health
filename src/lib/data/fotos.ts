@@ -341,6 +341,114 @@ export const fotos: Record<string, SupplementFotos> = {
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0DZP8H6RT?language=es",
     "brand": "Visita la tienda de WeightWorld"
+  },
+  "moringa": {
+    "images": [
+      "https://m.media-amazon.com/images/I/61V3dgXk9LL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71edXCjEhjL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71g8LQBrn0L._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B09BD8DC6Q?language=es",
+    "brand": "Zenement"
+  },
+  "zwartkomijnolie": {
+    "images": [
+      "https://m.media-amazon.com/images/I/51+wu0+IVbL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/617-iDNf1sL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71Bm0iY-tHL._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B079C2HY4Y?language=es",
+    "brand": "Mea Vita"
+  },
+  "opc": {
+    "images": [
+      "https://m.media-amazon.com/images/I/61RcJ5T8HxL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71QndLgBEZL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71PkvC+yCfL._AC_SL1381_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B003Y3MX32?language=es",
+    "brand": "fairvital"
+  },
+  "nad-plus": {
+    "images": [
+      "https://m.media-amazon.com/images/I/71H+50DE10L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71bEtKtFWfL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71P2Xkz16QL._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B0GGJN5ZWN?language=es",
+    "brand": "PLENIAGE"
+  },
+  "actieve-kool": {
+    "images": [
+      "https://m.media-amazon.com/images/I/712Gih1oCzL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71CMDkJqSbL._AC_SL1254_.jpg",
+      "https://m.media-amazon.com/images/I/71910XY8vCL._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B0FPGCHG3Q?language=es",
+    "brand": "Genérico"
+  },
+  "electrolyten": {
+    "images": [
+      "https://m.media-amazon.com/images/I/71nh0rcx15L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61oTDothMVL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71RB6vcxzML._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B08D9N5CK4?language=es",
+    "brand": "WeightWorld"
+  },
+  "kokosolie": {
+    "images": [
+      "https://m.media-amazon.com/images/I/61+L+DoPbzL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71UyOZLtw8L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71wR7V-1G+L._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B07W8PPQQM?language=es",
+    "brand": "by Amazon"
+  },
+  "l-lysine": {
+    "images": [
+      "https://m.media-amazon.com/images/I/61Acv8WHrfL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71OjVRjxwTL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61jZ1W25qiL._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B086QZGJHD?language=es",
+    "brand": "BioTechUSA"
+  },
+  "pepermuntolie": {
+    "images": [
+      "https://m.media-amazon.com/images/I/61vexvDMTrL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61+GRNSGb7L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81hYVmm-nyL._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B0849SHXFW?language=es",
+    "brand": "Aroma Labs"
+  },
+  "castor-oil": {
+    "images": [
+      "https://m.media-amazon.com/images/I/71DDAaKSD8L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81SXVGY065L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71WWhHhkwQL._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B0CWRD248L?language=es",
+    "brand": "Essican Purelife"
+  },
+  "kalium": {
+    "images": [
+      "https://m.media-amazon.com/images/I/61zk3GXvCUL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71d5jXNMoBL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71pmiQlQKhL._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B0CKZ92S4V?language=es",
+    "brand": "Benessence"
+  },
+  "levertraan": {
+    "images": [
+      "https://m.media-amazon.com/images/I/618tfMYEt6L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81lYjLyB7yL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61pEaAvf+gL._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B0GS2X8311?language=es",
+    "brand": "Genérico"
   }
 };
 

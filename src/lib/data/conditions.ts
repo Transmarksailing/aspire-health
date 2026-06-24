@@ -84,7 +84,7 @@ export const conditions: Condition[] = [
     id: "spijsvertering-en-darmen",
     naam: "Spijsvertering & darmen",
     beschrijving: "Ondersteuning van een gezonde darmflora en spijsvertering.",
-    supplementIds: ["probiotica", "psyllium", "curcumine"],
+    supplementIds: ["probiotica", "psyllium", "pepermuntolie", "curcumine"],
     leefstijlTips: [
       "Vezelrijk eten en voldoende water.",
       "Gefermenteerd voedsel (zuurkool, yoghurt, kefir).",
@@ -104,7 +104,7 @@ export const conditions: Condition[] = [
     id: "droge-ogen",
     naam: "Droge ogen",
     beschrijving: "Ondersteuning bij droge of vermoeide ogen en de oogfunctie.",
-    supplementIds: ["omega-3", "luteine", "vitamine-d3"],
+    supplementIds: ["omega-3", "luteine", "levertraan", "vitamine-d3"],
     leefstijlTips: [
       "Regelmatig knipperen en schermpauzes (20-20-20-regel).",
       "Vitamine A-rijke voeding (lever, levertraan) wordt traditioneel genoemd.",

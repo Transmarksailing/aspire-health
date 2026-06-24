@@ -18,6 +18,7 @@ export type SupplementCategory =
   | "vetzuur"
   | "enzym"
   | "paddenstoel"
+  | "olie"
   | "overig";
 
 export type TargetGroup =

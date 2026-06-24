@@ -15,6 +15,7 @@ const CATEGORIES: { value: SupplementCategory | "alle"; label: string }[] = [
   { value: "enzym", label: "Enzymen" },
   { value: "aminozuur", label: "Aminozuren" },
   { value: "paddenstoel", label: "Paddenstoelen" },
+  { value: "olie", label: "Oliën" },
   { value: "overig", label: "Overig" },
 ];
 

@@ -2,7 +2,7 @@
 // per supplement max 3 productfoto's (Amazon.es) + product-URL + merk.
 import { writeFileSync, readFileSync } from "node:fs";
 
-const DATASET_IDS = ["hygFxHgBoK6DIaTHO", "gWx9IkGJ1H6ILEqnA"];
+const DATASET_IDS = ["hygFxHgBoK6DIaTHO", "gWx9IkGJ1H6ILEqnA", "b9dO4c3KWvRQiXWvX"];
 
 // Token: eerst env, anders intern uit de project-config .mcp.json halen
 // (alleen voor deze API-call, wordt nooit geprint of geëxporteerd).
@@ -36,6 +36,13 @@ const terms = {
   "groene-thee": "te verde extracto green tea", collageen: "colageno hidrolizado",
   foliumzuur: "acido folico", selenium: "selenio selenium", luteine: "luteina zeaxantina",
   rhodiola: "rhodiola rosea", chroom: "cromo picolinato",
+  // uitbreiding (oliën + extra)
+  "l-lysine": "l-lisina lysine", electrolyten: "electrolitos sales",
+  moringa: "moringa capsulas", "actieve-kool": "carbon activado capsulas",
+  opc: "OPC extracto semilla uva", kalium: "citrato de potasio",
+  pepermuntolie: "aceite de menta capsulas", "nad-plus": "NAD+ suplemento",
+  "castor-oil": "aceite de ricino", levertraan: "aceite de higado de bacalao",
+  zwartkomijnolie: "aceite de comino negro", kokosolie: "aceite de coco virgen",
 };
 const urlToId = {};
 for (const [id, term] of Object.entries(terms)) {
