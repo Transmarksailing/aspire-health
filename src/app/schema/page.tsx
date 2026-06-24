@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getByIds, buildSchedule, findOverlap, MOMENT_LABELS } from "@/lib/overlap";
+import { interactionsAmong, interactionLabel } from "@/lib/data/interactions";
+import { getSupplement } from "@/lib/data/supplements";
 import type { Supplement } from "@/lib/types";
 
 const KEY = "aspire-schema";
@@ -27,6 +29,10 @@ export default function SchemaPage() {
 
   const schedule = buildSchedule(selected);
   const overlap = findOverlap(selected);
+  const combis = interactionsAmong(selected.map((s) => s.id));
+  const synergie = combis.filter((c) => c.type === "synergie");
+  const letop = combis.filter((c) => c.type !== "synergie");
+  const naam = (id: string) => getSupplement(id)?.naam ?? id;
 
   if (selected.length === 0) {
     return (
@@ -63,6 +69,35 @@ export default function SchemaPage() {
                 <strong>{o.stof}</strong> — in: {o.supplementen.join(", ")}
               </li>
             ))}
+          </ul>
+        </div>
+      )}
+
+      {synergie.length > 0 && (
+        <div className="mb-4 rounded-xl border border-success/40 bg-success/10 p-4">
+          <h2 className="mb-1 font-semibold text-success">🤝 Deze versterken elkaar</h2>
+          <ul className="list-inside list-disc text-sm">
+            {synergie.map((c) => (
+              <li key={c.a + c.b}>
+                <strong>{naam(c.a)} + {naam(c.b)}</strong> — {c.uitleg}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {letop.length > 0 && (
+        <div className="mb-5 rounded-xl border border-danger/40 bg-danger/5 p-4">
+          <h2 className="mb-1 font-semibold text-danger">⚠️ Let op bij deze combinaties</h2>
+          <ul className="space-y-1 text-sm">
+            {letop.map((c) => {
+              const meta = interactionLabel(c.type);
+              return (
+                <li key={c.a + c.b}>
+                  {meta.emoji} <strong>{naam(c.a)} + {naam(c.b)}</strong> ({meta.label}) — {c.uitleg}
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}

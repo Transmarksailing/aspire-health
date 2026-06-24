@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { supplements, getSupplement } from "@/lib/data/supplements";
 import { MOMENT_LABELS } from "@/lib/overlap";
+import { suppliers, amazonEsUrl } from "@/lib/suppliers";
+import { interactionsFor, interactionLabel } from "@/lib/data/interactions";
 import AddToSchema from "@/components/AddToSchema";
 
 // Genereer een statische pagina voor elk supplement (nodig voor GitHub Pages).
@@ -84,6 +86,68 @@ export default async function SupplementPage({
           </ul>
         </div>
       )}
+
+      {(() => {
+        const combis = interactionsFor(s.id);
+        if (combis.length === 0) return null;
+        return (
+          <div className="mt-4 rounded-xl border border-border bg-card p-4">
+            <h3 className="mb-3 font-semibold">Combinaties met andere supplementen</h3>
+            <ul className="space-y-2">
+              {combis.map((c) => {
+                const ander = getSupplement(c.other);
+                const meta = interactionLabel(c.type);
+                const kleur =
+                  c.type === "synergie"
+                    ? "text-success"
+                    : c.type === "vermijden"
+                      ? "text-danger"
+                      : "text-warning";
+                return (
+                  <li key={c.other + c.type} className="text-sm">
+                    <span className={`font-medium ${kleur}`}>
+                      {meta.emoji} {meta.label}:
+                    </span>{" "}
+                    <Link href={`/supplement/${c.other}`} className="underline hover:text-primary">
+                      {ander?.naam ?? c.other}
+                    </Link>
+                    <span className="text-muted"> — {c.uitleg}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        );
+      })()}
+
+      <div className="mt-4 rounded-xl border border-border bg-card p-4">
+        <h3 className="mb-3 font-semibold">Kopen bij</h3>
+        <div className="flex flex-wrap gap-2">
+          {suppliers(s).map((l) => (
+            <a
+              key={l.naam}
+              href={l.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-border px-4 py-2 text-sm hover:border-primary hover:bg-sand"
+            >
+              {l.naam} ↗
+            </a>
+          ))}
+        </div>
+        <a
+          href={amazonEsUrl(s)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary-hover"
+        >
+          🛒 Bekijk op Amazon.es
+        </a>
+        <p className="mt-2 text-[11px] text-muted">
+          Zoeklinks naar leveranciers. Aspire Health verkoopt zelf niets en ontvangt geen
+          provisie (tenzij later anders vermeld).
+        </p>
+      </div>
 
       {s.prijzen && s.prijzen.length > 0 && (
         <div className="mt-4">
