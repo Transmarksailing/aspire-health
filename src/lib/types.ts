@@ -56,3 +56,22 @@ export interface Supplement {
   bronnen?: string[];
   prijzen?: Price[];
 }
+
+export type Gender = "man" | "vrouw";
+
+/** Aandoening met bijbehorend supplementenadvies en leefstijltips. */
+export interface Condition {
+  id: string;
+  naam: string;
+  beschrijving: string;
+  /** Verwijst naar Supplement.id's. */
+  supplementIds: string[];
+  leefstijlTips: string[];
+  bronnen?: string[];
+}
+
+/** Eén advies-item uit de leeftijd/geslacht-adviesmodule. */
+export interface AdviceItem {
+  supplementId: string;
+  reden: string;
+}
