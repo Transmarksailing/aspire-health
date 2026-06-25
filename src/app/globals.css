@@ -3,17 +3,17 @@
 /* Aspire — Pyramide huisstijl (placeholder-palet: goud / zand / nachtblauw).
    Vervang de kleuren zodra de officiële Pyramide-assets binnen zijn. */
 @theme inline {
-  --color-primary: #C9952A; /* piramide-goud */
-  --color-primary-hover: #A87A1E;
-  --color-primary-light: #F0D89B;
-  --color-night: #1B2A4A; /* nachtblauw */
-  --color-night-soft: #2C3E63;
-  --color-sand: #F6EEDD;
-  --color-sand-dark: #E8DAB8;
-  --color-background: #FBF7EF;
+  --color-primary: #CE2A2B; /* Aspire-rood */
+  --color-primary-hover: #A81F22;
+  --color-primary-light: #F4C9C9;
+  --color-night: #2C2F34; /* antraciet (logo-achtergrond) */
+  --color-night-soft: #3E4248;
+  --color-sand: #F2F3F5;
+  --color-sand-dark: #E3E5E8;
+  --color-background: #FAFAFB;
   --color-foreground: #20242C;
   --color-card: #FFFFFF;
-  --color-border: #E6DCC6;
+  --color-border: #E2E4E8;
   --color-muted: #6B7280;
   --color-success: #2F855A;
   --color-danger: #C53030;
@@ -22,7 +22,7 @@
 }
 
 :root {
-  --bg: #FBF7EF;
+  --bg: #FAFAFB;
   --fg: #20242C;
 }
 

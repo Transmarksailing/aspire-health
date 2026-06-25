@@ -1,4 +1,4 @@
-# Aspire Health
+# Aspire Wealth
 
 Gezondheids-PWA voor supplementen, inname-timing, overlap-check, prijzen en gezond leven.
 Gebouwd met Next.js (static export) en gehost op **GitHub Pages**.
@@ -31,7 +31,7 @@ npm run dev      # http://localhost:3000
 cd aspire
 git init
 git add .
-git commit -m "Aspire Health Fase 1"
+git commit -m "Aspire Wealth Fase 1"
 git branch -M main
 git remote add origin https://github.com/<jouw-gebruikersnaam>/aspire-health.git
 git push -u origin main

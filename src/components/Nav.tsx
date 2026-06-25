@@ -27,10 +27,22 @@ export default function Nav() {
         <Link
           href="/"
           onClick={() => setOpen(false)}
-          className="flex items-center gap-2 font-semibold"
+          className="flex items-center gap-2.5"
         >
-          <span className="inline-block text-2xl leading-none">▲</span>
-          <span className="text-lg tracking-wide">Aspire Health</span>
+          <svg viewBox="0 0 512 512" className="h-8 w-8 shrink-0" aria-hidden="true">
+            <polygon points="256,112 256,330 130,330" fill="#9AA0A8" />
+            <polygon points="256,112 382,330 256,330" fill="#C5CAD1" />
+            <polygon points="256,112 256,330 214,330" fill="#CE2A2B" />
+            <polygon points="256,112 298,330 256,330" fill="#E0473F" />
+            <g opacity="0.18">
+              <polygon points="256,348 130,348 256,470" fill="#9AA0A8" />
+              <polygon points="256,348 382,348 256,470" fill="#C5CAD1" />
+            </g>
+          </svg>
+          <span className="flex flex-col leading-none">
+            <span className="text-xl font-semibold italic tracking-wide">Aspire</span>
+            <span className="text-[10px] uppercase tracking-[0.3em] text-sand/70">Wealth</span>
+          </span>
         </Link>
 
         {/* Desktop-menu */}

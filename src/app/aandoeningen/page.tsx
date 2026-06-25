@@ -12,7 +12,7 @@ export default function AandoeningenPage() {
 
       <div className="mb-5 rounded-xl border border-danger/30 bg-danger/5 p-4 text-sm">
         ⚕️ <strong>Geen medisch advies.</strong> Bij <strong>ernstige ziektes</strong>{" "}
-        (zoals kanker of Alzheimer) geeft Aspire Health bewust géén supplementenadvies.
+        (zoals kanker of Alzheimer) geeft Aspire Wealth bewust géén supplementenadvies.
         Raadpleeg daarvoor altijd je arts of specialist.
       </div>
 

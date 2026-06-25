@@ -178,7 +178,7 @@ export default async function SupplementPage({
           🛒 Bekijk op Amazon.es
         </a>
         <p className="mt-2 text-[11px] text-muted">
-          Zoeklinks naar leveranciers. Aspire Health verkoopt zelf niets en ontvangt geen
+          Zoeklinks naar leveranciers. Aspire Wealth verkoopt zelf niets en ontvangt geen
           provisie (tenzij later anders vermeld).
         </p>
       </div>

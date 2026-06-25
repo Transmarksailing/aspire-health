@@ -1,12 +1,12 @@
 {
-  "name": "Aspire Health — Supplementen & Gezond Leven",
-  "short_name": "Aspire Health",
+  "name": "Aspire Wealth — Supplementen & Gezond Leven",
+  "short_name": "Aspire Wealth",
   "description": "Overzicht van supplementen: inname-timing, overlap, prijzen en gezond leven.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
-  "background_color": "#FBF7EF",
-  "theme_color": "#1B2A4A",
+  "background_color": "#FAFAFB",
+  "theme_color": "#2C2F34",
   "icons": [
     {
       "src": "icon.svg",
