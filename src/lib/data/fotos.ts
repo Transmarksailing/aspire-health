@@ -6,6 +6,8 @@ export interface SupplementFotos {
   images: string[];
   amazonUrl?: string;
   brand?: string;
+  prijs?: number;
+  prijsValuta?: string;
 }
 
 export const fotos: Record<string, SupplementFotos> = {
@@ -15,8 +17,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/91EHYv7SzuL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81v5Y4JbeUL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B08VWCDM8C?language=es",
-    "brand": "Plastimea"
+    "amazonUrl": "https://www.amazon.es/dp/B00DN9FKT6?language=es",
+    "brand": "NEO",
+    "prijs": 9.95,
+    "prijsValuta": "€"
   },
   "vitamine-k2": {
     "images": [
@@ -24,8 +28,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/61sME3ofWAL._AC_SL1080_.jpg",
       "https://m.media-amazon.com/images/I/61grMSxLAdL._AC_SL1080_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B0B6FPVFLG?language=es",
-    "brand": "BANDINI"
+    "amazonUrl": "https://www.amazon.es/dp/B0BS6Q3R7G?language=es",
+    "brand": "Vitaminact",
+    "prijs": 13.99,
+    "prijsValuta": "€"
   },
   "nattokinase": {
     "images": [
@@ -34,7 +40,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/81KBtZdJbDL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0F3FXZHGB?language=es",
-    "brand": "Vit4ever"
+    "brand": "Vit4ever",
+    "prijs": 9.99,
+    "prijsValuta": "€"
   },
   "melatonine": {
     "images": [
@@ -42,8 +50,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/61TRjrLBNuL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71p6VSfdLRL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B09WJBLCR3?language=es",
-    "brand": "WeightWorld"
+    "amazonUrl": "https://www.amazon.es/dp/B0BNQRM29T?language=es",
+    "brand": "Weider",
+    "prijs": 10.99,
+    "prijsValuta": "€"
   },
   "curcumine": {
     "images": [
@@ -52,7 +62,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71fcvIK0cJL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0FN1SLRB5?language=es",
-    "brand": "NUTRABETTER"
+    "brand": "NUTRABETTER",
+    "prijs": 9.99,
+    "prijsValuta": "€"
   },
   "omega-3": {
     "images": [
@@ -60,8 +72,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71FNqRv0neL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71KL4L0LFaL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B084G5XC29?language=es",
-    "brand": "WeightWorld"
+    "amazonUrl": "https://www.amazon.es/dp/B0DVZWJYLV?language=es",
+    "brand": "NUTRABETTER",
+    "prijs": 12.99,
+    "prijsValuta": "€"
   },
   "reishi": {
     "images": [
@@ -69,8 +83,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/91iEzrkxjcL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71kRIo0WGTL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B087CSVZX3?language=es",
-    "brand": "Hivital Foods"
+    "amazonUrl": "https://www.amazon.es/dp/B0D3QNC11Q?language=es",
+    "brand": "Naturalma",
+    "prijs": 9.99,
+    "prijsValuta": "€"
   },
   "meidoorn": {
     "images": [
@@ -79,7 +95,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/81LDlqEjSnL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0D3QP2HXF?language=es",
-    "brand": "Naturalma"
+    "brand": "Naturalma",
+    "prijs": 9.99,
+    "prijsValuta": "€"
   },
   "valeriaan": {
     "images": [
@@ -88,7 +106,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/711AIm7NriL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B077F2P2JC?language=es",
-    "brand": "Kneipp"
+    "brand": "Kneipp",
+    "prijs": 10.71,
+    "prijsValuta": "€"
   },
   "collageen": {
     "images": [
@@ -96,8 +116,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/81vto7bYJRL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71-wtv7DRiL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B07RKWV54M?language=es",
-    "brand": "natural elements"
+    "amazonUrl": "https://www.amazon.es/dp/B079C336Y3?language=es",
+    "brand": "WeightWorld",
+    "prijs": 18.99,
+    "prijsValuta": "€"
   },
   "ginkgo-biloba": {
     "images": [
@@ -106,7 +128,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/81Oe+99fevL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0DTHX85YJ?language=es",
-    "brand": "Horbäach"
+    "brand": "Horbäach",
+    "prijs": 9.99,
+    "prijsValuta": "€"
   },
   "selenium": {
     "images": [
@@ -114,8 +138,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/61-GhCmcK2L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/61DFZ14NGlL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B07Q3SGSH3?language=es",
-    "brand": "Gloryfeel"
+    "amazonUrl": "https://www.amazon.es/dp/B00012NHYI?language=es",
+    "brand": "SOLARAY",
+    "prijs": 14.6,
+    "prijsValuta": "€"
   },
   "l-tryptofaan": {
     "images": [
@@ -123,8 +149,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71n20+CqeuL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/51jewKnjRRL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B0D8SX1T2M?language=es",
-    "brand": "Aldous Bio"
+    "amazonUrl": "https://www.amazon.es/dp/B07T7PG7XB?language=es",
+    "brand": "Vitamaze - amazing life",
+    "prijs": 16.97,
+    "prijsValuta": "€"
   },
   "magnesium": {
     "images": [
@@ -133,7 +161,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71v9y6hSb6L._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0CKFHG8NQ?language=es",
-    "brand": "WeightWorld"
+    "brand": "WeightWorld",
+    "prijs": 15.99,
+    "prijsValuta": "€"
   },
   "luteine": {
     "images": [
@@ -141,8 +171,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/81DwZY-RlZL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81gKj0yHMvL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B0FDG2T767?language=es",
-    "brand": "RAIBU"
+    "amazonUrl": "https://www.amazon.es/dp/B0BWJPS9H6?language=es",
+    "brand": "Hivital Foods",
+    "prijs": 18.87,
+    "prijsValuta": "€"
   },
   "vitamine-d3": {
     "images": [
@@ -150,8 +182,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/81bG2CAXUhL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81cvI06lpFL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B0GW11HJ91?language=es",
-    "brand": "AAVALABS"
+    "amazonUrl": "https://www.amazon.es/dp/B001AT0Q40?language=es",
+    "brand": "Solgar",
+    "prijs": 12.29,
+    "prijsValuta": "€"
   },
   "lions-mane": {
     "images": [
@@ -159,8 +193,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/81i5OeGEyjL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81l1-9ZcAEL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B0FWC6LPNW?language=es",
-    "brand": "naturgizer+"
+    "amazonUrl": "https://www.amazon.es/dp/B0CCP8GG6X?language=es",
+    "brand": "WeightWorld",
+    "prijs": 17.99,
+    "prijsValuta": "€"
   },
   "mariadistel": {
     "images": [
@@ -169,7 +205,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71shLgAublL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B00DN9JULU?language=es",
-    "brand": "INTEGRALIA"
+    "brand": "INTEGRALIA",
+    "prijs": 8.72,
+    "prijsValuta": "€"
   },
   "ashwagandha": {
     "images": [
@@ -177,8 +215,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/61Gx6kIeOdL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/91cAKDI69EL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B09TFKCJLH?language=es",
-    "brand": "HSN"
+    "amazonUrl": "https://www.amazon.es/dp/B0DTHZ5RJT?language=es",
+    "brand": "Visita la tienda de Horbäach",
+    "prijs": 9.99,
+    "prijsValuta": "€"
   },
   "rhodiola": {
     "images": [
@@ -186,8 +226,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71drb1N5wcL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81IyxnTXgRL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B07NJGLG4T?language=es",
-    "brand": "un producto de 100 % natural sl"
+    "amazonUrl": "https://www.amazon.es/dp/B0FSF5WZ8T?language=es",
+    "brand": "BANDINI",
+    "prijs": 22.9,
+    "prijsValuta": "€"
   },
   "cbd": {
     "images": [
@@ -196,7 +238,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71HkoYNxt+L._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0GRN1PPW8?language=es",
-    "brand": "CBDluxe"
+    "brand": "CBDluxe",
+    "prijs": 21.9,
+    "prijsValuta": "€"
   },
   "glucosamine-chondroitine": {
     "images": [
@@ -205,7 +249,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/51Npvmymp8L._AC_SL1440_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0D3LYN6VP?language=es",
-    "brand": "Marnys"
+    "brand": "Marnys",
+    "prijs": 11.99,
+    "prijsValuta": "€"
   },
   "vitamine-c": {
     "images": [
@@ -214,7 +260,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/61pMF8c+SWL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B09N23WZCS?language=es",
-    "brand": "LIFE PRO NUTRITION"
+    "brand": "LIFE PRO NUTRITION",
+    "prijs": 15.5,
+    "prijsValuta": "€"
   },
   "vitamine-b12": {
     "images": [
@@ -223,7 +271,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/913y8azxehL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B09P3Y2WGJ?language=es",
-    "brand": "HSN"
+    "brand": "HSN",
+    "prijs": 9.4,
+    "prijsValuta": "€"
   },
   "chroom": {
     "images": [
@@ -231,8 +281,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/61II6G-Zg4L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/61kCtAe0bTL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B09P1QHBLP?language=es",
-    "brand": "HSN"
+    "amazonUrl": "https://www.amazon.es/dp/B0DM2KW88B?language=es",
+    "brand": "Visita la tienda de Smart Supplements",
+    "prijs": 9.99,
+    "prijsValuta": "€"
   },
   "black-cohosh": {
     "images": [
@@ -240,8 +292,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71XpyHww8NL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71GdRG0gihL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B0BTHL1PJQ?language=es",
-    "brand": "NATURLIDER"
+    "amazonUrl": "https://www.amazon.es/dp/B00DN9NZCU?language=es",
+    "brand": "SOLARAY",
+    "prijs": 27.63,
+    "prijsValuta": "€"
   },
   "cranberry": {
     "images": [
@@ -250,7 +304,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/81e6SFHcweL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0DP5FXCMM?language=es",
-    "brand": "Horbäach"
+    "brand": "Horbäach",
+    "prijs": 13.49,
+    "prijsValuta": "€"
   },
   "zink": {
     "images": [
@@ -259,7 +315,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71uO03lflqL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0DZ3JPB83?language=es",
-    "brand": "Bloom Naturals Beauty Supplements"
+    "brand": "Bloom Naturals Beauty Supplements",
+    "prijs": 9.95,
+    "prijsValuta": "€"
   },
   "q10": {
     "images": [
@@ -267,8 +325,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/81Xmo3aOgIL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71vmGZZGtrL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B0CPTF9FYR?language=es",
-    "brand": "vitabay"
+    "amazonUrl": "https://www.amazon.es/dp/B09T3M45TC?language=es",
+    "brand": "HSN",
+    "prijs": 15.9,
+    "prijsValuta": "€"
   },
   "ijzer": {
     "images": [
@@ -276,8 +336,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/619P6mG71RL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/718pkNTYzlL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B08DG4NXBS?language=es",
-    "brand": "WeightWorld"
+    "amazonUrl": "https://www.amazon.es/dp/B0D2DMS45T?language=es",
+    "brand": "Horbäach",
+    "prijs": 13.99,
+    "prijsValuta": "€"
   },
   "probiotica": {
     "images": [
@@ -286,7 +348,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71FxOCIvCyL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B07ZKMCN2Z?language=es",
-    "brand": "WeightWorld"
+    "brand": "WeightWorld",
+    "prijs": 15.49,
+    "prijsValuta": "€"
   },
   "foliumzuur": {
     "images": [
@@ -294,8 +358,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71eZKLgHkoL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/716LGhRhGDL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B0DZWJ9989?language=es",
-    "brand": "Bloom Naturals Beauty Supplements"
+    "amazonUrl": "https://www.amazon.es/dp/B0D9245D5F?language=es",
+    "brand": "Horbäach",
+    "prijs": 6.99,
+    "prijsValuta": "€"
   },
   "psyllium": {
     "images": [
@@ -303,8 +369,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/617YNJv6Q4L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/61KkhbANiIL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B00XO21PDC?language=es",
-    "brand": "SURA VITASAN"
+    "amazonUrl": "https://www.amazon.es/dp/B079GBJPJY?language=es",
+    "brand": "el Granero",
+    "prijs": 15.03,
+    "prijsValuta": "€"
   },
   "saw-palmetto": {
     "images": [
@@ -312,8 +380,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/81f3q84rtxL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81GPy3z0ZxL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B09YXXV4TS?language=es",
-    "brand": "Swanson"
+    "amazonUrl": "https://www.amazon.es/dp/B09XJYZYN7?language=es",
+    "brand": "Naturitas",
+    "prijs": 17.89,
+    "prijsValuta": "€"
   },
   "calcium": {
     "images": [
@@ -321,8 +391,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/913PunNN7YL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/812feLpTKhL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B09KY59CFP?language=es",
-    "brand": "Laboratoires Nutrimea"
+    "amazonUrl": "https://www.amazon.es/dp/B0DTKJB5Z1?language=es",
+    "brand": "Horbäach",
+    "prijs": 9.17,
+    "prijsValuta": "€"
   },
   "groene-thee": {
     "images": [
@@ -330,8 +402,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71XNezmVFKL._AC_SL1495_.jpg",
       "https://m.media-amazon.com/images/I/71PMQqVMuWL._AC_SL1495_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B002GYMHKY?language=es",
-    "brand": "IronMaxx"
+    "amazonUrl": "https://www.amazon.es/dp/B0DTKGMFJZ?language=es",
+    "brand": "Horbäach",
+    "prijs": 9.99,
+    "prijsValuta": "€"
   },
   "shilajit": {
     "images": [
@@ -340,7 +414,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/615CqlVDQPL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0DZP8H6RT?language=es",
-    "brand": "Visita la tienda de WeightWorld"
+    "brand": "Visita la tienda de WeightWorld",
+    "prijs": 19.99,
+    "prijsValuta": "€"
   },
   "moringa": {
     "images": [
@@ -348,8 +424,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71edXCjEhjL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71g8LQBrn0L._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B09BD8DC6Q?language=es",
-    "brand": "Zenement"
+    "amazonUrl": "https://www.amazon.es/dp/B07MQ63DMC?language=es",
+    "brand": "HSN",
+    "prijs": 14.49,
+    "prijsValuta": "€"
   },
   "zwartkomijnolie": {
     "images": [
@@ -358,7 +436,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71Bm0iY-tHL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B079C2HY4Y?language=es",
-    "brand": "Mea Vita"
+    "brand": "Mea Vita",
+    "prijs": 27.99,
+    "prijsValuta": "€"
   },
   "opc": {
     "images": [
@@ -367,7 +447,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71PkvC+yCfL._AC_SL1381_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B003Y3MX32?language=es",
-    "brand": "fairvital"
+    "brand": "fairvital",
+    "prijs": 12.95,
+    "prijsValuta": "€"
   },
   "nad-plus": {
     "images": [
@@ -375,8 +457,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71bEtKtFWfL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71P2Xkz16QL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B0GGJN5ZWN?language=es",
-    "brand": "PLENIAGE"
+    "amazonUrl": "https://www.amazon.es/dp/B0FPM8YCJS?language=es",
+    "brand": "BANDINI",
+    "prijs": 22.9,
+    "prijsValuta": "€"
   },
   "actieve-kool": {
     "images": [
@@ -385,7 +469,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71910XY8vCL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0FPGCHG3Q?language=es",
-    "brand": "Genérico"
+    "brand": "Genérico",
+    "prijs": 18.75,
+    "prijsValuta": "€"
   },
   "electrolyten": {
     "images": [
@@ -393,8 +479,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/61oTDothMVL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71RB6vcxzML._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B08D9N5CK4?language=es",
-    "brand": "WeightWorld"
+    "amazonUrl": "https://www.amazon.es/dp/B008AGN094?language=es",
+    "brand": "Science in Sport",
+    "prijs": 8.49,
+    "prijsValuta": "€"
   },
   "kokosolie": {
     "images": [
@@ -402,8 +490,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71UyOZLtw8L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71wR7V-1G+L._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B07W8PPQQM?language=es",
-    "brand": "by Amazon"
+    "amazonUrl": "https://www.amazon.es/dp/B016740UHU?language=es",
+    "brand": "NaturGreen",
+    "prijs": 7.99,
+    "prijsValuta": "€"
   },
   "l-lysine": {
     "images": [
@@ -412,7 +502,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/61jZ1W25qiL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B086QZGJHD?language=es",
-    "brand": "BioTechUSA"
+    "brand": "BioTechUSA",
+    "prijs": 12.96,
+    "prijsValuta": "€"
   },
   "pepermuntolie": {
     "images": [
@@ -421,7 +513,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/81hYVmm-nyL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0849SHXFW?language=es",
-    "brand": "Aroma Labs"
+    "brand": "Aroma Labs",
+    "prijs": 4.79,
+    "prijsValuta": "€"
   },
   "castor-oil": {
     "images": [
@@ -430,7 +524,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71WWhHhkwQL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0CWRD248L?language=es",
-    "brand": "Essican Purelife"
+    "brand": "Essican Purelife",
+    "prijs": 14.95,
+    "prijsValuta": "€"
   },
   "kalium": {
     "images": [
@@ -438,8 +534,10 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/71d5jXNMoBL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71pmiQlQKhL._AC_SL1500_.jpg"
     ],
-    "amazonUrl": "https://www.amazon.es/dp/B0CKZ92S4V?language=es",
-    "brand": "Benessence"
+    "amazonUrl": "https://www.amazon.es/dp/B0BGJDYY1Q?language=es",
+    "brand": "natural elements",
+    "prijs": 21.99,
+    "prijsValuta": "€"
   },
   "levertraan": {
     "images": [
@@ -448,7 +546,9 @@ export const fotos: Record<string, SupplementFotos> = {
       "https://m.media-amazon.com/images/I/61pEaAvf+gL._AC_SL1500_.jpg"
     ],
     "amazonUrl": "https://www.amazon.es/dp/B0GS2X8311?language=es",
-    "brand": "Genérico"
+    "brand": "Genérico",
+    "prijs": 25.95,
+    "prijsValuta": "€"
   }
 };
 

@@ -71,7 +71,7 @@ async function getItems() {
   if (!token) return JSON.parse(readFileSync("/tmp/dataset.json", "utf8"));
   const all = [];
   for (const ds of DATASET_IDS) {
-    const u = `https://api.apify.com/v2/datasets/${ds}/items?clean=true&format=json&limit=1000&fields=input,brand,url,thumbnailImage,highResolutionImages`;
+    const u = `https://api.apify.com/v2/datasets/${ds}/items?clean=true&format=json&limit=1000&fields=input,brand,url,thumbnailImage,highResolutionImages,price`;
     const res = await fetch(u, { headers: { Authorization: `Bearer ${token}` } });
     if (!res.ok) throw new Error(`Apify API ${res.status} voor ${ds}`);
     all.push(...(await res.json()));
@@ -84,7 +84,7 @@ const byId = {};
 for (const it of items) {
   const id = resolveId(it.input);
   if (!id) continue;
-  if (!byId[id]) byId[id] = { images: [], amazonUrl: null, brand: null };
+  if (!byId[id]) byId[id] = { images: [], amazonUrl: null, brand: null, prijs: null, prijsValuta: null };
   const entry = byId[id];
   // verzamel afbeeldingen (eerst hoge resolutie, anders thumbnail vergroot)
   const imgs = (it.highResolutionImages && it.highResolutionImages.length)
@@ -92,6 +92,15 @@ for (const it of items) {
     : (it.thumbnailImage ? [bigImage(it.thumbnailImage)] : []);
   for (const img of imgs) {
     if (entry.images.length < 3 && !entry.images.includes(img)) entry.images.push(img);
+  }
+  // kies het goedkoopste product per supplement voor link + prijs + merk
+  const prijs = it.price?.value ?? it["price.value"] ?? null;
+  const valuta = it.price?.currency ?? it["price.currency"] ?? "EUR";
+  if (prijs != null && (entry.prijs == null || prijs < entry.prijs)) {
+    entry.prijs = prijs;
+    entry.prijsValuta = valuta;
+    if (it.url) entry.amazonUrl = it.url;
+    if (it.brand) entry.brand = it.brand;
   }
   if (!entry.amazonUrl && it.url) entry.amazonUrl = it.url;
   if (!entry.brand && it.brand) entry.brand = it.brand;
@@ -105,6 +114,8 @@ export interface SupplementFotos {
   images: string[];
   amazonUrl?: string;
   brand?: string;
+  prijs?: number;
+  prijsValuta?: string;
 }
 
 export const fotos: Record<string, SupplementFotos> = ${JSON.stringify(byId, null, 2)};

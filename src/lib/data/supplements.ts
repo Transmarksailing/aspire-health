@@ -709,10 +709,10 @@ export const supplements: Supplement[] = [
     werkzameStoffen: ["zwartkomijn", "nigella sativa", "thymochinon"],
     doseringStandaard: "1 theelepel of 1000 mg",
     innameMomenten: ["bij-maaltijd"],
-    geschiktVoor: ["immuunsysteem", "ontstekingsremmend", "huid", "luchtwegen"],
+    geschiktVoor: ["immuunsysteem", "ontstekingsremmend", "huid", "luchtwegen", "tinnitus (voorlopig)"],
     doelgroepen: ["algemeen"],
     beschrijving:
-      "Olie uit zwarte komijn (Nigella sativa) met thymochinon; traditioneel voor weerstand en ontsteking.",
+      "Olie uit zwarte komijn (Nigella sativa, o.a. de gewaardeerde Ethiopische soort) met thymochinon; traditioneel voor weerstand en ontsteking. Wordt ook genoemd bij tinnitus, maar daarvoor is het bewijs nog beperkt en voorlopig (vooral dierstudies).",
   },
   {
     id: "kokosolie",

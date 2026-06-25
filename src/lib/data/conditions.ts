@@ -187,6 +187,119 @@ export const conditions: Condition[] = [
       "Bij diabetes altijd in overleg met je arts/diabetesteam.",
     ],
   },
+  {
+    id: "hoofdpijn-migraine",
+    naam: "Hoofdpijn & migraine",
+    beschrijving: "Ondersteuning bij hoofdpijn- en migraineklachten.",
+    supplementIds: ["magnesium", "q10", "vitamine-b12"],
+    leefstijlTips: [
+      "Voldoende water, regelmaat in slaap en maaltijden.",
+      "Houd triggers bij (cafeïne, stress, schermtijd).",
+    ],
+  },
+  {
+    id: "hooikoorts-allergie",
+    naam: "Hooikoorts & allergie",
+    beschrijving: "Ondersteuning bij allergische klachten en hooikoorts.",
+    supplementIds: ["vitamine-c", "zwartkomijnolie", "probiotica"],
+    leefstijlTips: [
+      "Begin ruim vóór het pollenseizoen met ondersteuning.",
+      "Een gezonde darmflora ondersteunt het immuunsysteem.",
+    ],
+  },
+  {
+    id: "pms-menstruatie",
+    naam: "PMS & menstruatieklachten",
+    beschrijving: "Ondersteuning bij premenstruele en menstruatieklachten.",
+    supplementIds: ["magnesium", "calcium", "omega-3", "vitamine-d3"],
+    leefstijlTips: [
+      "Beweging en beperking van suiker/cafeïne kunnen klachten verlichten.",
+    ],
+  },
+  {
+    id: "haar-en-haaruitval",
+    naam: "Haar & haaruitval",
+    beschrijving: "Ondersteuning van sterk, gezond haar.",
+    supplementIds: ["collageen", "zink", "ijzer"],
+    leefstijlTips: [
+      "Laat bij plotselinge haaruitval je ijzer en schildklier checken.",
+    ],
+  },
+  {
+    id: "tinnitus-oorsuizen",
+    naam: "Tinnitus (oorsuizen)",
+    beschrijving: "Ondersteuning bij oorsuizen; vaak een signaal van iets anders.",
+    supplementIds: ["ginkgo-biloba", "magnesium", "zink", "vitamine-b12", "zwartkomijnolie"],
+    leefstijlTips: [
+      "Bescherm je oren tegen hard geluid; beperk stress.",
+      "Zwartkomijnolie (Nigella sativa, o.a. Ethiopische soort) wordt traditioneel genoemd; bewijs is nog beperkt/voorlopig (vooral dierstudies).",
+      "Laat aanhoudende tinnitus medisch beoordelen.",
+    ],
+  },
+  {
+    id: "winterdip-stemming",
+    naam: "Winterdip & stemming",
+    beschrijving: "Ondersteuning van de stemming, vooral in de donkere maanden.",
+    supplementIds: ["vitamine-d3", "omega-3", "l-tryptofaan", "magnesium"],
+    leefstijlTips: [
+      "Zoek daglicht op, beweeg en houd een dagritme aan.",
+      "Bij aanhoudende somberheid: praat met je (huis)arts.",
+    ],
+  },
+  {
+    id: "spierkramp",
+    naam: "Spierkramp",
+    beschrijving: "Ondersteuning bij spierkrampen en een goede spierfunctie.",
+    supplementIds: ["magnesium", "kalium", "electrolyten"],
+    leefstijlTips: [
+      "Voldoende drinken en mineralen, zeker bij sport en warmte.",
+    ],
+  },
+  {
+    id: "koortslip-herpes",
+    naam: "Koortslip (herpes)",
+    beschrijving: "Ondersteuning bij terugkerende koortslip.",
+    supplementIds: ["l-lysine", "zink", "vitamine-c"],
+    leefstijlTips: [
+      "Lysine bij de eerste tintel; beperk stress en zonverbranding.",
+    ],
+  },
+  {
+    id: "libido-en-vitaliteit",
+    naam: "Libido & vitaliteit",
+    beschrijving: "Ondersteuning van energie, libido en vitaliteit.",
+    supplementIds: ["ashwagandha", "shilajit", "zink"],
+    leefstijlTips: [
+      "Voldoende slaap, beweging en stressreductie zijn de basis.",
+    ],
+  },
+  {
+    id: "huid-en-eczeem",
+    naam: "Huid & eczeem",
+    beschrijving: "Ondersteuning van een gezonde, rustige huid.",
+    supplementIds: ["omega-3", "vitamine-d3", "zink", "probiotica"],
+    leefstijlTips: [
+      "Hydrateer de huid; let op voedingstriggers en stress.",
+    ],
+  },
+  {
+    id: "zware-benen-spataderen",
+    naam: "Zware benen & spataderen",
+    beschrijving: "Ondersteuning van de bloedvaten en doorbloeding in de benen.",
+    supplementIds: ["opc", "meidoorn", "omega-3"],
+    leefstijlTips: [
+      "Beweeg regelmatig, leg de benen omhoog, vermijd lang stilstaan.",
+    ],
+  },
+  {
+    id: "sportherstel",
+    naam: "Sportherstel & spieropbouw",
+    beschrijving: "Ondersteuning van herstel en spieropbouw rond sporten.",
+    supplementIds: ["magnesium", "electrolyten", "collageen", "l-lysine"],
+    leefstijlTips: [
+      "Voldoende eiwit, slaap en hydratatie zijn het belangrijkst.",
+    ],
+  },
 ];
 
 export function getCondition(id: string): Condition | undefined {

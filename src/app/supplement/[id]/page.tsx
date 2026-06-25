@@ -183,31 +183,54 @@ export default async function SupplementPage({
         </p>
       </div>
 
-      {s.prijzen && s.prijzen.length > 0 && (
-        <div className="mt-4">
-          <h3 className="mb-2 font-semibold">Prijzen</h3>
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-border text-left text-muted">
-                <th className="py-1">Leverancier</th>
-                <th>Inhoud</th>
-                <th>Prijs</th>
-                <th>Per stuk</th>
-              </tr>
-            </thead>
-            <tbody>
-              {s.prijzen.map((p, i) => (
-                <tr key={i} className="border-b border-border/50">
-                  <td className="py-1">{p.leverancier}</td>
-                  <td>{p.inhoud}</td>
-                  <td>€{p.prijs.toFixed(2)}</td>
-                  <td className="text-muted">{p.eenheidsprijs ?? "—"}</td>
+      {(() => {
+        // Combineer handmatige prijzen met de gescrapete Amazon.es-prijs, goedkoopste eerst.
+        const f = getFotos(s.id);
+        const rijen: { leverancier: string; inhoud: string; prijs: number; url?: string }[] = [];
+        if (f?.prijs != null) {
+          rijen.push({ leverancier: "Amazon.es", inhoud: f.brand ?? "—", prijs: f.prijs, url: f.amazonUrl });
+        }
+        for (const p of s.prijzen ?? []) {
+          rijen.push({ leverancier: p.leverancier, inhoud: p.inhoud, prijs: p.prijs, url: p.url });
+        }
+        if (rijen.length === 0) return null;
+        rijen.sort((a, b) => a.prijs - b.prijs);
+        return (
+          <div className="mt-4">
+            <h3 className="mb-2 font-semibold">Prijzen <span className="text-xs font-normal text-muted">(goedkoopste eerst)</span></h3>
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-border text-left text-muted">
+                  <th className="py-1">Leverancier</th>
+                  <th>Merk / inhoud</th>
+                  <th>Prijs</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
+              </thead>
+              <tbody>
+                {rijen.map((p, i) => (
+                  <tr key={i} className="border-b border-border/50">
+                    <td className="py-1">
+                      {p.url ? (
+                        <a href={p.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                          {p.leverancier} ↗
+                        </a>
+                      ) : (
+                        p.leverancier
+                      )}
+                    </td>
+                    <td className="text-muted">{p.inhoud}</td>
+                    <td className={i === 0 ? "font-semibold text-success" : ""}>
+                      €{p.prijs.toFixed(2)}
+                      {i === 0 && " ✓"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <p className="mt-1 text-[11px] text-muted">Amazon.es-prijs automatisch opgehaald; kan afwijken. Vergelijk gerust via de leverancier-links.</p>
+          </div>
+        );
+      })()}
     </article>
   );
 }
