@@ -549,6 +549,28 @@ export const fotos: Record<string, SupplementFotos> = {
     "brand": "Genérico",
     "prijs": 25.95,
     "prijsValuta": "€"
+  },
+  "l-arginine": {
+    "images": [
+      "https://m.media-amazon.com/images/I/61-+yvuso4L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/612+wF9-rlL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61kYI8f33vL._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B0B4633SDQ?language=es",
+    "brand": "HSN",
+    "prijs": 27.9,
+    "prijsValuta": "€"
+  },
+  "creatine": {
+    "images": [
+      "https://m.media-amazon.com/images/I/61QHs-sJT5L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/819Yx9-4EFL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81PHNPY5uyL._AC_SL1500_.jpg"
+    ],
+    "amazonUrl": "https://www.amazon.es/dp/B0CF28WQH3?language=es",
+    "brand": "WeightWorld",
+    "prijs": 16.99,
+    "prijsValuta": "€"
   }
 };
 

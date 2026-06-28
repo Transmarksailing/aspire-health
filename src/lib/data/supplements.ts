@@ -72,7 +72,7 @@ export const supplements: Supplement[] = [
     doseringStandaard: "300–400 mg",
     bovengrens: "250 mg uit supplementen (aanvullend op voeding, richtlijn EU)",
     innameMomenten: ["avond", "voor-slapen"],
-    innameTips: "'s Avonds voor ontspanning en slaap. Vorm magnesiumcitraat/-bisglycinaat is goed opneembaar.",
+    innameTips: "'s Avonds voor ontspanning en slaap; kies de vorm magnesiumglycinaat (rustgevend, goed opneembaar). Een wat hogere avonddosis wordt vaak aangeraden.",
     geschiktVoor: ["energie", "slaap", "spieren (kramp)", "botten"],
     doelgroepen: ["algemeen", "sporters", "ouderen"],
     beschrijving:
@@ -319,7 +319,7 @@ export const supplements: Supplement[] = [
     geschiktVoor: ["spijsvertering", "darmflora", "immuunsysteem"],
     doelgroepen: ["algemeen"],
     beschrijving:
-      "Goede bacteriën ter ondersteuning van de darmflora, spijsvertering en weerstand.",
+      "Goede bacteriën ter ondersteuning van de darmflora, spijsvertering en weerstand. Apotheker Phil Cowley raadt 45-plussers aan een (goed gekozen) probioticum te nemen.",
   },
   {
     id: "psyllium",
@@ -482,7 +482,7 @@ export const supplements: Supplement[] = [
     werkzameStoffen: ["collageen", "peptiden"],
     doseringStandaard: "5–10 g",
     innameMomenten: ["ochtend", "nuchter"],
-    innameTips: "Poeder oplosbaar in koffie/smoothie; combineer met vitamine C.",
+    innameTips: "Poeder oplosbaar in koffie/smoothie; combineer met hyaluronzuur en vitamine C (zonder hyaluronzuur is het effect op de huid beperkt).",
     geschiktVoor: ["huid", "gewrichten", "botten", "haar"],
     doelgroepen: ["vrouwen", "ouderen", "sporters"],
     beschrijving:
@@ -579,7 +579,7 @@ export const supplements: Supplement[] = [
     werkzameStoffen: ["natrium", "kalium", "magnesium", "electrolyten"],
     doseringStandaard: "1 portie",
     innameMomenten: ["ochtend", "bij-maaltijd"],
-    innameTips: "Oplossen in water, vooral bij inspanning, hitte of vasten.",
+    innameTips: "Oplossen in water, vooral bij inspanning, hitte of vasten. Let op: kies een variant met magnesium én kalium — niet eentje die vooral natrium (zout) bevat.",
     geschiktVoor: ["hydratie", "sport", "herstel", "kramp"],
     doelgroepen: ["sporters", "algemeen"],
     beschrijving:
@@ -726,6 +726,36 @@ export const supplements: Supplement[] = [
     doelgroepen: ["algemeen", "sporters"],
     beschrijving:
       "Bevat MCT-vetten als snelle energiebron; ook gebruikt voor huid en haar.",
+  },
+  {
+    id: "creatine",
+    naam: "Creatine (monohydraat)",
+    naamEn: "Creatine monohydrate",
+    categorie: "overig",
+    werkzameStoffen: ["creatine", "creatine monohydraat"],
+    doseringStandaard: "5 g (5000 mg)",
+    innameMomenten: ["ochtend", "bij-maaltijd"],
+    innameTips: "Dagelijks 5 g, óók op rustdagen. Kies de vorm monohydraat.",
+    geschiktVoor: ["energie", "spieren", "hersenen (brain fog)", "botten"],
+    doelgroepen: ["sporters", "ouderen", "vrouwen", "algemeen"],
+    beschrijving:
+      "Levert energie (ATP) voor spieren én hersenen; ook genoemd voor botsterkte. Apotheker Phil Cowley noemt het een basis-supplement: vrouwen hebben 20–30% minder creatine dan mannen, en het daalt vanaf ~32 jaar.",
+    bronnen: ["https://www.youtube.com/watch?v=g0rIQm8xnHo"],
+  },
+  {
+    id: "l-arginine",
+    naam: "L-Arginine",
+    naamEn: "L-Arginine",
+    categorie: "aminozuur",
+    werkzameStoffen: ["l-arginine", "arginine", "stikstofoxide"],
+    doseringStandaard: "3–6 g",
+    innameMomenten: ["nuchter"],
+    innameTips: "Bevordert de bloeddoorstroming (stikstofoxide); ook topisch voor het haar genoemd.",
+    geschiktVoor: ["huid", "haargroei", "bloeddoorstroming", "sport"],
+    doelgroepen: ["algemeen", "sporters"],
+    beschrijving:
+      "Aminozuur dat via stikstofoxide de doorbloeding ondersteunt en zo huid en haargroei voedt; zit ook in rode biet.",
+    bronnen: ["https://www.youtube.com/watch?v=g0rIQm8xnHo"],
   },
 ];
 

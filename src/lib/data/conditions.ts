@@ -114,7 +114,7 @@ export const conditions: Condition[] = [
     id: "geheugen-en-concentratie",
     naam: "Geheugen & concentratie",
     beschrijving: "Ondersteuning van cognitie, geheugen en focus.",
-    supplementIds: ["ginkgo-biloba", "lions-mane", "omega-3", "q10"],
+    supplementIds: ["ginkgo-biloba", "lions-mane", "omega-3", "q10", "creatine"],
     leefstijlTips: [
       "Beweging, voldoende slaap en mentale uitdaging.",
       "Beperk suiker en sterk bewerkt voedsel.",
@@ -124,7 +124,7 @@ export const conditions: Condition[] = [
     id: "vermoeidheid-en-energie",
     naam: "Vermoeidheid & energie",
     beschrijving: "Ondersteuning bij energie en vitaliteit.",
-    supplementIds: ["vitamine-b12", "ijzer", "q10", "magnesium", "shilajit"],
+    supplementIds: ["vitamine-b12", "ijzer", "q10", "magnesium", "shilajit", "creatine"],
     leefstijlTips: [
       "Laat bij aanhoudende vermoeidheid bloedwaarden (ijzer, B12) checken.",
       "Daglicht, beweging en regelmaat.",
@@ -134,7 +134,7 @@ export const conditions: Condition[] = [
     id: "sterke-botten",
     naam: "Sterke botten",
     beschrijving: "Ondersteuning van bot- en gewrichtsgezondheid.",
-    supplementIds: ["calcium", "vitamine-d3", "vitamine-k2", "magnesium"],
+    supplementIds: ["calcium", "vitamine-d3", "vitamine-k2", "magnesium", "creatine"],
     leefstijlTips: [
       "Belaste beweging (wandelen, krachttraining).",
       "Vitamine K2 stuurt calcium naar de botten.",
@@ -220,9 +220,11 @@ export const conditions: Condition[] = [
     id: "haar-en-haaruitval",
     naam: "Haar & haaruitval",
     beschrijving: "Ondersteuning van sterk, gezond haar.",
-    supplementIds: ["collageen", "zink", "ijzer"],
+    supplementIds: ["collageen", "zink", "ijzer", "saw-palmetto", "l-arginine"],
     leefstijlTips: [
       "Laat bij plotselinge haaruitval je ijzer en schildklier checken.",
+      "Apotheker-tip: pak het op 3 sporen aan — hormonen (saw palmetto + pompoenpit of minoxidil), doorbloeding (L-arginine, rozemarijnolie) en huidverzorging.",
+      "Rood licht (LED) kan haaruitval ~20–30% verminderen.",
     ],
   },
   {
@@ -295,7 +297,7 @@ export const conditions: Condition[] = [
     id: "sportherstel",
     naam: "Sportherstel & spieropbouw",
     beschrijving: "Ondersteuning van herstel en spieropbouw rond sporten.",
-    supplementIds: ["magnesium", "electrolyten", "collageen", "l-lysine"],
+    supplementIds: ["creatine", "magnesium", "electrolyten", "collageen", "l-lysine"],
     leefstijlTips: [
       "Voldoende eiwit, slaap en hydratatie zijn het belangrijkst.",
     ],

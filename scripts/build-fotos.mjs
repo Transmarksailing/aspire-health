@@ -2,7 +2,7 @@
 // per supplement max 3 productfoto's (Amazon.es) + product-URL + merk.
 import { writeFileSync, readFileSync } from "node:fs";
 
-const DATASET_IDS = ["hygFxHgBoK6DIaTHO", "gWx9IkGJ1H6ILEqnA", "b9dO4c3KWvRQiXWvX"];
+const DATASET_IDS = ["hygFxHgBoK6DIaTHO", "gWx9IkGJ1H6ILEqnA", "b9dO4c3KWvRQiXWvX", "enIQpJVuvct64w4oj"];
 
 // Token: eerst env, anders intern uit de project-config .mcp.json halen
 // (alleen voor deze API-call, wordt nooit geprint of geëxporteerd).
@@ -43,6 +43,7 @@ const terms = {
   pepermuntolie: "aceite de menta capsulas", "nad-plus": "NAD+ suplemento",
   "castor-oil": "aceite de ricino", levertraan: "aceite de higado de bacalao",
   zwartkomijnolie: "aceite de comino negro", kokosolie: "aceite de coco virgen",
+  creatine: "creatina monohidrato", "l-arginine": "l-arginina",
 };
 const urlToId = {};
 for (const [id, term] of Object.entries(terms)) {
